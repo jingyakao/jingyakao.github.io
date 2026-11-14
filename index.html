@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>高靖雅 | 個人履歷</title>
+
+  <!-- [來源] 字體：Google Fonts（Noto Sans TC） https://fonts.google.com/ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--頁首導覽列-->
+  <header>
+    <div class="logo">高靖雅 | 個人履歷</div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">01 基本資訊</a></li>
+        <li><a href="#skills">02 技能</a></li>
+        <li><a href="#experience">03 經歷</a></li>
+        <li><a href="#contact">04 聯絡</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--01 基本資訊-->
+    <section id="about" class="card-section">
+      <div class="about-left">
+        <div class="photo-box">
+          <img src="image/me1.jpg" alt="高靖雅的個人照片">
+        </div>
+      </div>
+
+      <div class="about-right">
+        <h1>高靖雅</h1>
+        <p class="slogan">在探索中成長，在嘗試中成為自己</p>
+
+        <p class="intro-note">
+          重視責任與自我成長，期待透過每一次學習與嘗試，成為更好的自己。
+        </p>
+
+        <!--基本資料-->
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-label">學校</span>
+            <span class="info-value">中原大學</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">科系</span>
+            <span class="info-value">資訊管理學系 二年級</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">所在地</span>
+            <span class="info-value">台灣，桃園中壢</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">語言能力</span>
+            <span class="info-value">中文（母語）、英文（中等）</span>
+          </div>
+        </div>
+
+        <!--個人特質、興趣、優勢、價值-->
+        <div class="traits">
+          <div class="trait-row">
+            <div class="trait-label">個人特質<small>Personal Traits</small></div>
+            <div class="trait-chips">
+              <span class="tag">理性</span>
+              <span class="tag">有條理</span>
+              <span class="tag">好奇心強</span>
+            </div>
+          </div>
+          <div class="trait-row">
+            <div class="trait-label">興趣領域<small>Interests</small></div>
+            <div class="trait-chips">
+              <span class="tag">心理學與自我探索</span>
+              <span class="tag">AI 應用</span>
+              <span class="tag">理財與投資</span>
+            </div>
+          </div>
+          <div class="trait-row">
+            <div class="trait-label">個人優勢<small>Strengths</small></div>
+            <div class="trait-chips">
+              <span class="tag">邏輯分析</span>
+              <span class="tag">資訊統整</span>
+              <span class="tag">主動學習</span>
+              <span class="tag">自我反思</span>
+            </div>
+          </div>
+          <div class="trait-row">
+            <div class="trait-label">核心價值<small>Core Values</small></div>
+            <div class="trait-chips">
+              <span class="tag">責任感</span>
+              <span class="tag">持續學習</span>
+              <span class="tag">自我成長</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--02 技能-->
+    <section id="skills" class="card-section">
+      <!-- 左側：專業技能（圓環） -->
+      <div class="skills-col">
+        <h2 class="section-title">專業技能  skills</h2>
+        <div class="rings-grid">
+          <div class="ring-item">
+            <div class="ring" style="--percent: 85%;"><span>85%</span></div>
+            <p>Excel 資料處理</p>
+          </div>
+          <div class="ring-item">
+            <div class="ring" style="--percent: 85%;"><span>85%</span></div>
+            <p>AI 工具應用</p>
+          </div>
+          <div class="ring-item">
+            <div class="ring" style="--percent: 90%;"><span>90%</span></div>
+            <p>資訊整理與分析</p>
+          </div>
+          <div class="ring-item">
+            <div class="ring" style="--percent: 85%;"><span>85%</span></div>
+            <p>電商平台操作</p>
+          </div>
+        </div>
+      </div>
+
+      <!--右側：程式技能（進度條）-->
+      <div class="skills-col">
+        <h2 class="section-title">程式技能  coding</h2>
+        <div class="bars-list">
+          <div class="bar-item">
+            <span class="bar-label">HTML / CSS</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 65%;"></div></div>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">Python</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 85%;"></div></div>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">JavaScript</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 80%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--03 經歷-->
+    <section id="experience" class="card-section">
+      <h2 class="section-title">個人經歷  experience</h2>
+
+      <div class="exp-grid">
+        <!-- 經歷卡片 1 -->
+        <article class="exp-card">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="file-name">experience_01.js</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-img">
+              <img src="image/exp1.jpg" alt="書卷獎獎狀合照">
+            </div>
+            <h3>連續榮獲書卷獎<br>（大一上、下學期學業績優）</h3>
+            <p>我於大一上、下學期都有獲得書卷獎。</p>
+            <p>一直以來，我對自己的課業表現都有一定要求，也喜歡把不懂的地方弄清楚，而不是只記住答案。這段經歷讓我更有信心面對新的學習挑戰，也讓我體會到，找到適合自己的學習方式，比一味追求讀書時間更重要。</p>
+            <div class="exp-links">
+              <a href="image/award1.jpg" target="_blank" class="btn-outline">大一上獎狀</a>
+              <a href="image/award2.jpg" target="_blank" class="btn-outline">大一下獎狀</a>
+            </div>
+          </div>
+        </article>
+
+        <!--經歷卡片 2-->
+        <article class="exp-card">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="file-name">dorm_scheduler.py</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-img">
+              <img src="image/exp2.jpg" alt="智慧宿舍排程器系統畫面">
+            </div>
+            <h3>智慧宿舍打掃排程系統<br>（Python 實務專案）</h3>
+            <p>為了解決恩慈宿舍人工排班耗時又繁瑣的問題，我獨立設計並開發了一套雲端排班系統。利用 Python 自動判斷國定假日、調整打掃週次，並透過 Streamlit 製作操作介面，讓使用者可以快速完成排班，還能一鍵匯出整理好的 Excel 分配表。</p>
+            <p>透過這次專案，我不僅提升了程式應用能力，也學會如何運用程式解決生活中的實際問題。</p>
+            <div class="exp-links">
+              <a href="https://dorm-cleaning-system-fn4vv56gkrzq2dqd3yvt8g.streamlit.app/" target="_blank" class="btn-outline">體驗智慧排程系統</a>
+            </div>
+          </div>
+        </article>
+
+        <!--經歷卡片 3-->
+        <article class="exp-card">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="file-name">ecommerce_intern.py</span>
+          </div>
+          <div class="exp-content">
+            <div class="exp-img">
+              <img src="image/exp3.jpg" alt="北威顧問實習照片">
+            </div>
+            <h3>北威顧問股份有限公司實習<br>（電商營運與 AI 應用）</h3>
+            <p>暑假在北威顧問股份有限公司實習，主要負責從零開始建立蝦皮賣場，包含商品資料蒐集、照片拍攝、商品上架及文案撰寫。為了加速書籍商品資料的建檔，我也嘗試開發 Python 檢索腳本（ISBN-10/13 字串清理與書店檢索連結生成），並結合 AI 指令產出商品介紹與 Excel 整理資料。</p>
+            <p>透過這份工作，我累積了電商營運、AI 工具應用與程式輔助資料處理的實務經驗，暑假結束後亦持續留任參與相關工作。</p>
+            <div class="exp-links">
+              <a href="https://github.com/jingyakao/-ISBN-" target="_blank" class="btn-outline">實習開發的書籍檢索程式碼</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!--04 聯絡-->
+  <section id="contact">
+    <div class="contact-inner">
+      <h2 class="section-title">聯絡資訊  contact</h2>
+
+      <div class="terminal-box">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="file-name">terminal — contact</span>
+        </div>
+        <div class="terminal-body">
+          <ul class="social-links">
+            <li><span class="sns-name">instagram</span> → <a href="https://www.instagram.com/jy_0493/" target="_blank">instagram.com/jy_0493</a></li>
+            <li><span class="sns-name">linkedin</span> → <a href="https://www.linkedin.com/in/fiona-kao-4928383a8/" target="_blank">linkedin.com/in/fiona-kao-4928383a8</a></li>
+            <li><span class="sns-name">github</span> → <a href="https://github.com/jingyakao" target="_blank">github.com/jingyakao</a></li>
+          </ul>
+
+          <a href="mailto:w0906169389@gmail.com" class="btn-solid">寄信</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--頁尾 -->
+  <footer>
+    <p>© 中原大學 資管二甲 11444113 高靖雅</p>
+    <a href="#" class="back-to-top">回到頂端</a>
+  </footer>
+
+</body>
+</html>

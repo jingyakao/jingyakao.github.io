@@ -1,0 +1,574 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  background-color: #F4F8FB;
+  color: #1E293B;
+  line-height: 1.7;
+}
+
+main {
+  max-width: 1120px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+}
+
+/* 通用區塊外框 */
+.card-section {
+  background-color: #FFFFFF;
+  border: 1px solid #D5E0EA;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 25px;
+}
+
+/* 區塊小標題（左側青藍色細條） */
+.section-title {
+  font-size: 1.1rem;
+  color: #1E293B;
+  border-left: 4px solid #0891B2;
+  padding-left: 10px;
+  margin-bottom: 22px;
+}
+
+/* 頁首與導覽列 */
+header {
+  width: 92%;
+  max-width: 1080px;
+  margin: 15px auto 0;
+  padding: 15px 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #D5E0EA;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0891B2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 25px;
+}
+
+/*  01 基本資訊*/
+#about {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-left {
+  width: 240px;
+  margin-right: 40px;
+}
+
+/* 個人照片 */
+.photo-box {
+  width: 240px;
+  height: 320px;
+  background-color: #EAF1F7;
+  border: 2px solid #0891B2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.about-right h1 {
+  color: #0891B2;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.slogan {
+  color: #D97706;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+/* 自我介紹：左側色條的引言樣式 */
+.intro-note {
+  background-color: #F1F6FA;
+  border-left: 4px solid #0891B2;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+/* 基本資料：左欄標籤、右欄內容 */
+.info-list {
+  border: 1px solid #D5E0EA;
+  border-radius: 8px;
+  padding: 4px 20px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: 5.5em auto;
+  grid-column-gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px dashed #D5E0EA;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  color: #64748B;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.info-value {
+  font-size: 0.95rem;
+}
+
+/* 個人特質、興趣、優勢、價值：左側標題、右側標籤 */
+.trait-row {
+  display: grid;
+  grid-template-columns: 8.5em auto;
+  grid-column-gap: 12px;
+  align-items: start;
+  padding: 12px 0;
+  border-top: 1px solid #D5E0EA;
+}
+
+.trait-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.trait-label small {
+  display: block;
+  color: #64748B;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.trait-chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #E0F4F8;
+  color: #0E7490;
+  border: 1px solid #0891B2;
+  padding: 3px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+/*  02 技能  */
+#skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-col {
+  width: 47%;
+}
+
+/* 圓環圖表：外圈用 conic-gradient 畫進度，內圈白色圓蓋住中間 */
+/* 參考來源：Chrome for Developers - Progress ring
+   https://developer.chrome.com/docs/modern-web-guidance/guides/ui-components/progress-ring */
+.rings-grid {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+  grid-row-gap: 24px;
+}
+
+.ring-item {
+  display: flex;
+  align-items: center;
+}
+
+.ring-item p {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-left: 14px;
+}
+
+.ring {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#0891B2 var(--percent), #E2E8F0 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring span {
+  width: 58px;
+  height: 58px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* 長條圖表 */
+.bars-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.bar-item:last-child {
+  margin-bottom: 0;
+}
+
+.bar-label {
+  width: 100px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.bar-track {
+  flex: 1;
+  height: 14px;
+  background-color: #E2E8F0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: #0891B2;
+  border-radius: 10px;
+}
+
+/* 03 經歷 */
+.exp-grid {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-column-gap: 2%;
+  align-items: stretch;
+}
+
+.exp-card {
+  border: 1px solid #D5E0EA;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 視窗頂部列 */
+.window-bar {
+  background-color: #EAF1F7;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #D5E0EA;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.dot.red {
+  background-color: #FB7185;
+}
+
+.dot.yellow {
+  background-color: #FBBF24;
+}
+
+.dot.green {
+  background-color: #34D399;
+}
+
+.file-name {
+  margin-left: 8px;
+  font-family: Consolas, "Courier New", "Noto Sans TC", monospace;
+  font-size: 0.85rem;
+  color: #64748B;
+}
+
+.exp-content {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* 經歷圖片 */
+.exp-img {
+  width: 100%;
+  height: 210px;
+  background-color: #EAF1F7;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.exp-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.exp-content h3 {
+  color: #0891B2;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.exp-content p {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+/* 佐證連結區：永遠貼在卡片底部，多顆按鈕垂直排列 */
+.exp-links {
+  margin-top: auto;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-outline {
+  display: block;
+  text-align: center;
+  padding: 8px 12px;
+  border: 1px solid #0891B2;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.btn-outline:last-child {
+  margin-bottom: 0;
+}
+
+/* 04 聯絡：橫跨整個畫面寬度的長條  */
+#contact {
+  width: 100%;
+  background-color: #E0F4F8;
+  border-top: 1px solid #0891B2;
+  border-bottom: 1px solid #0891B2;
+  padding: 36px 0 40px;
+}
+
+.contact-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.terminal-box {
+  background-color: #FFFFFF;
+  border: 1px solid #D5E0EA;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.terminal-body {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  list-style: none;
+  font-family: Consolas, "Courier New", "Noto Sans TC", monospace;
+  font-size: 0.95rem;
+  line-height: 2;
+  overflow: hidden;
+}
+
+.sns-name {
+  display: inline-block;
+  width: 5.5em;
+  color: #64748B;
+}
+
+.btn-solid {
+  background-color: #0891B2;
+  color: #FFFFFF;
+  padding: 12px 36px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 頁尾：同樣橫跨整個畫面寬度  */
+footer {
+  width: 100%;
+  padding: 16px 40px;
+  background-color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  font-size: 0.85rem;
+  color: #64748B;
+}
+
+/* [特效 1] 超連結四種狀態變色：未點擊→已點擊→滑鼠移入變橘色加底線→點擊當下變紅色— 使用 a:link、a:visited、a:hover、a:active*/
+/*  參考來源：MDN Web Docs - Styling links
+    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Styling_links */
+nav a:link,
+.social-links a:link,
+.back-to-top:link {
+  color: #0891B2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:visited,
+.social-links a:visited,
+.back-to-top:visited {
+  color: #0E7490;
+}
+
+nav a:hover,
+.social-links a:hover,
+.back-to-top:hover {
+  color: #D97706;
+  text-decoration: underline;
+}
+
+nav a:active,
+.social-links a:active,
+.back-to-top:active {
+  color: #DC2626;
+}
+
+/* 按鈕連結：滑鼠移入時反白變色（同為超連結狀態效果） */
+.btn-outline:link,
+.btn-outline:visited {
+  color: #0891B2;
+  background-color: #E0F4F8;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  color: #FFFFFF;
+  background-color: #0891B2;
+}
+
+.btn-solid:hover {
+  background-color: #0E7490;
+}
+
+/* [特效 2] 滑鼠移到技能圓環時放大 — 使用 transition + transform: scale */
+/*  參考來源：MDN Web Docs - CSS transforms
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transforms */
+
+.ring {
+  transition: transform 0.3s ease;
+}
+
+.ring-item:hover .ring {
+  transform: scale(1.12);
+}
+
+/* [特效 3] 滑鼠移到經歷卡片時往上浮起，並出現青藍色光暈 — 使用 transition + transform: translateY + box-shadow */
+/*  參考來源：MDN Web Docs - Using CSS transitions 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using */
+.exp-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(8, 145, 178, 0.25);
+}
+
+/* [特效 4] 滑鼠移到小藍框標籤時往上浮起，並出現青藍色光暈 — 使用 transition + transform: translateY + box-shadow */
+/*  參考來源：MDN Web Docs - Using CSS transitions 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using */
+    .tag {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .tag:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(8, 145, 178, 0.25);
+    }
+
+/* [特效 5] 滑鼠移到程式技能進度條時，進度條從 0 重新長到設定的寬度 — 使用 :hover + @keyframes + animation（只播放 1 次） */
+/*  參考來源：MDN Web Docs - Using CSS animations
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Using */
+
+@keyframes bar-grow {
+  from {
+    width: 0;
+  }
+}
+
+.bar-item:hover .bar-fill {
+  animation: bar-grow 1.2s ease-out 1;
+}
+
+/* [特效 6] 滑鼠移到技能圓環時，圓環從 0% 重新轉到設定的百分比 — 使用 @property 讓 --percent 可以做動畫 + @keyframes
+ /* 參考來源：Chrome for Developers - Progress ring
+    https://developer.chrome.com/docs/modern-web-guidance/guides/ui-components/progress-ring */
+
+@property --percent {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+@keyframes ring-fill {
+  from {
+    --percent: 0%;
+  }
+}
+
+.ring-item:hover .ring {
+  animation: ring-fill 1.2s ease-out 1;
+}
